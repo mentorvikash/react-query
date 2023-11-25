@@ -1,0 +1,132 @@
+{
+  "superheroes": [
+    {
+      "name": "Superman",
+      "age": 30,
+      "powers": ["Flight", "Super Strength", "Heat Vision"],
+      "gender": "Male"
+    },
+    {
+      "name": "Wonder Woman",
+      "age": 28,
+      "powers": ["Superhuman Strength", "Lasso of Truth"],
+      "gender": "Female"
+    },
+    {
+      "name": "Spider-Man",
+      "age": 22,
+      "powers": ["Wall-Crawling", "Spider-Sense", "Web-Shooters"],
+      "gender": "Male"
+    },
+    {
+      "name": "Batman",
+      "age": 35,
+      "powers": ["Intelligence", "Martial Arts", "Gadgets"],
+      "gender": "Male"
+    },
+    {
+      "name": "Captain America",
+      "age": 32,
+      "powers": ["Super Soldier Serum", "Shield"],
+      "gender": "Male"
+    },
+    {
+      "name": "Black Widow",
+      "age": 28,
+      "powers": ["Martial Arts", "Espionage"],
+      "gender": "Female"
+    },
+    {
+      "name": "The Flash",
+      "age": 25,
+      "powers": ["Super Speed", "Time Travel"],
+      "gender": "Male"
+    },
+    {
+      "name": "Green Lantern",
+      "age": 29,
+      "powers": ["Power Ring", "Flight"],
+      "gender": "Male"
+    },
+    {
+      "name": "Thor",
+      "age": 1000,
+      "powers": ["Godly Strength", "Mjolnir"],
+      "gender": "Male"
+    },
+    {
+      "name": "Hulk",
+      "age": 40,
+      "powers": ["Super Strength", "Gamma Radiation"],
+      "gender": "Male"
+    },
+    {
+      "name": "Iron Man",
+      "age": 38,
+      "powers": ["Powered Armor", "Genius-level Intellect"],
+      "gender": "Male"
+    }
+  ],
+  "supervillains": [
+    {
+      "name": "Lex Luthor",
+      "age": 45,
+      "powers": ["Genius-level Intellect", "Wealth", "Strategic Mind"],
+      "gender": "Male"
+    },
+    {
+      "name": "The Joker",
+      "age": 35,
+      "powers": ["Chaos Inducement", "Criminal Mastermind"],
+      "gender": "Male"
+    },
+    {
+      "name": "Green Goblin",
+      "age": 50,
+      "powers": ["Goblin Formula", "Enhanced Strength", "Glider"],
+      "gender": "Male"
+    },
+    {
+      "name": "Catwoman",
+      "age": 32,
+      "powers": ["Master Thief", "Acrobatics", "Whip Proficiency"],
+      "gender": "Female"
+    },
+    {
+      "name": "Magneto",
+      "age": 60,
+      "powers": ["Magnetism Manipulation", "Metal Control"],
+      "gender": "Male"
+    },
+    {
+      "name": "Poison Ivy",
+      "age": 28,
+      "powers": ["Toxicology", "Plant Manipulation"],
+      "gender": "Female"
+    },
+    {
+      "name": "Doctor Octopus",
+      "age": 40,
+      "powers": ["Mechanical Tentacles", "Genius-level Intellect"],
+      "gender": "Male"
+    },
+    {
+      "name": "Darkseid",
+      "age": 10000,
+      "powers": ["Superhuman Strength", "Omega Beams"],
+      "gender": "Male"
+    },
+    {
+      "name": "Loki",
+      "age": 1500,
+      "powers": ["Shape-shifting", "Illusions", "Magic"],
+      "gender": "Male"
+    },
+    {
+      "name": "Venom",
+      "age": 30,
+      "powers": ["Symbiote Suit", "Superhuman Strength"],
+      "gender": "Male"
+    }
+  ]
+}
