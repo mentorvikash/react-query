@@ -55,3 +55,8 @@
 .navBarMain a:hover {
   color: yellow;
 }
+
+.error {
+  font-weight: 200;
+  color: red;
+}

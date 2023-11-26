@@ -4,17 +4,18 @@ import React, { useEffect, useState } from "react";
 function Superhero() {
   const [superHerosData, setSuperHerosData] = useState([]);
   const [isLoding, setIsLoding] = useState(false);
+  const [error, setError] = useState("");
 
   useEffect(() => {
     setIsLoding(true);
     axios
-      .get("http://localhost:4000/superheroes")
+      .get("http://localhost:4000/superheroe")
       .then((res) => {
         setSuperHerosData(res?.data);
         console.log("superhero data", res);
       })
       .catch((err) => {
-        console.error("err: ", err.message);
+        setError(err.message);
       })
       .finally(() => {
         setIsLoding(false);
@@ -22,6 +23,8 @@ function Superhero() {
   }, []);
 
   if (isLoding) return <h2>Loading.......</h2>;
+
+  if (error) return <h2 className="error">{error}</h2>;
 
   return (
     <div>

@@ -3,18 +3,20 @@ import { useQuery } from "react-query";
 import axios from "axios";
 
 const fetchSuperHeros = () => {
-  return axios.get("http://localhost:4000/superheroes");
+  return axios.get("http://localhost:4000/superheroe");
 };
 
 function RqSuperHero() {
-  const { data, isLoading } = useQuery(
+  const { data, isLoading, isError, error } = useQuery(
     "fetch superheros data",
     fetchSuperHeros
   );
 
   if (isLoading) return <h2>Loading........</h2>;
 
-  console.log("data: ", data);
+  if (isError) return <h2 className="error">{error.message}</h2>;
+
+  console.log("error: ", error);
   return (
     <div>
       <div>
