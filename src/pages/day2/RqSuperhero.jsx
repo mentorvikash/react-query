@@ -11,7 +11,16 @@ function RqSuperHero() {
     "fetch superheros data",
     fetchSuperHeros,
     {
-      staleTime: 30000,
+      // staleTime: 30000,
+      // cacheTime: 100000,
+      // refetchOnMount: true, // when mount refresh data, default ture
+      // refetchOnWindowFocus: true, // when re-focus window it fetch fresh data from server
+
+      // Polling -  for e-commerce site where data, changes every second, refetch data every 1 or 2 second by
+      refetchInterval: 2000, // false | time in seconds
+      refetchIntervalInBackground: true, // ture | false - allow fetch fetch fresh data even is user not on page
+
+      // Allow user to refetch data on user intration
     }
   );
 
