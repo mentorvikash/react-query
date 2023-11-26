@@ -2,6 +2,8 @@ import './App.css';
 import Routing from './routes';
 import { QueryClientProvider, QueryClient } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
+import { Link } from 'react-router-dom';
+
 
 function App() {
   const queryClient = new QueryClient()
@@ -9,11 +11,11 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <div className="App">
         <div className='navBarMain'>
-          <a href='/day2/superHero'>Day2 Superhero</a>
-          <a href='/day2/rq-SuperHero'>Day2 RQ Superhero</a>
+          <Link to='/day2/superHero'>Day2 Superhero</Link>
+          <Link to='/day2/rq-SuperHero'>Day2 RQ Superhero</Link>
         </div>
-        <Routing />
       </div>
+      <Routing />
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );

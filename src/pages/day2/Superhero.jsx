@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 
 function Superhero() {
   const [superHerosData, setSuperHerosData] = useState([]);
@@ -31,7 +31,7 @@ function Superhero() {
       {superHerosData.length > 0 && (
         <div>
           {superHerosData.map((superhero) => (
-            <>
+            <Fragment key={superhero.name}>
               <h1>
                 <strong>Name: </strong>
                 {superhero.name}
@@ -43,7 +43,7 @@ function Superhero() {
                 <strong>Age: </strong>
                 {superhero.age}
               </h3>
-            </>
+            </Fragment>
           ))}
         </div>
       )}

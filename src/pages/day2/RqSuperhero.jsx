@@ -1,28 +1,32 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { useQuery } from "react-query";
-import axios from "axios";
 
-const fetchSuperHeros = () => {
-  return axios.get("http://localhost:4000/superheroes");
+const fetchSuperHeros = async () => {
+  const res = await fetch("http://localhost:4000/superheroes");
+  return res.json();
 };
 
 function RqSuperHero() {
-  const { data, isLoading, isError, error } = useQuery(
+  const { data, isLoading, isError, error, isFetching } = useQuery(
     "fetch superheros data",
-    fetchSuperHeros
+    fetchSuperHeros,
+    {
+      staleTime: 30000,
+    }
   );
 
   if (isLoading) return <h2>Loading........</h2>;
 
   if (isError) return <h2 className="error">{error.message}</h2>;
 
-  console.log("error: ", error);
+  console.log({ data });
+  console.log({ isLoading, isFetching });
   return (
     <div>
       <div>
-        {data?.data?.length > 0 && (
+        {data?.length > 0 && (
           <div>
-            {data.data.map((superhero, index) => (
+            {data.map((superhero, index) => (
               <Fragment key={index}>
                 <h1>
                   <strong>Name: </strong>
