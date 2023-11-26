@@ -9,7 +9,7 @@ function Superhero() {
   useEffect(() => {
     setIsLoding(true);
     axios
-      .get("http://localhost:4000/superheroe")
+      .get("http://localhost:4000/superheroes")
       .then((res) => {
         setSuperHerosData(res?.data);
         console.log("superhero data", res);
