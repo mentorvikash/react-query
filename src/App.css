@@ -42,4 +42,16 @@
   display: flex;
   justify-content: start;
   gap: 10px;
+  background-color: black;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.navBarMain a {
+  text-decoration: none;
+  color: white;
+}
+
+.navBarMain a:hover {
+  color: yellow;
 }
