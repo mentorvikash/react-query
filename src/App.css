@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+/* Top Navbar  */
+.navBarMain {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
